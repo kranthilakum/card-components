@@ -16,15 +16,21 @@ class App extends React.Component {
     return (
       <div className="card">
         <Card>
-          <CardHeader title="Card Header goes here ..." />
+          <CardHeader text="Card Header goes here ..." />
           <CardBody>
-            <CardTitle title="Card Title" />
             <CardImage
               url="https://via.placeholder.com/100"
               name="100 Placeholder"
               caption="100 Placeholder Card Image"
             />
-            <CardText text="Card content here ..." />
+            <div className="px-6 py-4">
+              <CardTitle title="Card Title" />
+              <CardText
+                text="Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Voluptatibus quia, nulla!
+                Maiores et perferendis eaque, exercitationem praesentium nihil."
+              />
+            </div>
           </CardBody>
           <CardFooter text="Card footer text here ..." />
         </Card>
